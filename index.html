@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width", initial-scale=1.0 />
+        <title>Interactive profile</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main class="profile">
+            <section>
+                <header>
+                    <h1 id="name"> <span>Oliver</span> <span>Omondi</span></h1>
+                    <p class="intro">Full-Stack Developer | Cybersecurity Analyst | Financial Consultant</p>
+                </header>
+                <img src="Image/image.jpg" alt="Photo of a group of developers during a bootcamp in Nairobi">
+                <button id="bio-btn">Show Bio</button>
+                <p id="bio" style="display: none;">Omondi is a highly adaptable tech professional with a passion for secure, scalable systems and smart financial planning</p>
+            </section>
+            <section class="skills">
+                <h2>Web Development</h2>
+                <ul id="web-skills">
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>Kotlin</li>
+                </ul>
+                <button class="add" data-target="web-skills">Add Skills</button>
+                <button class="remove" data-target="web-skills">Remove Skills</button>
+            </section>
+            <section>
+                <h2>Cybersecurity</h2>
+                <ul id="cyber-skills">
+                    <li>Network Security</li>
+                    <li>Penetration Testing</li>
+                    <li>Incident Response</li>
+                </ul>
+                <button class="add" data-target="cyber-skills">Add Skills</button>
+                <button class="remove" data-target="cyber-skills">Remove Skills</button>
+            </section>
+            <section>
+                <h2>Finance</h2>
+                <ul id="finance-skills">
+                    <li>Financial Analysis</li>
+                    <li>Loan appraisal</li>
+                    <li>Risk Management</li>
+                </ul>
+                <button class="add" data-target="finance-skills">Add Skills</button>
+                <button class="remove" data-target="finance-skills">Remove Skills</button>
+            </section>
+            <button id="add-section">Add New Category</button>
+        </main>
+        <footer>
+            <p>&copy; 2025 Oliver Omondi. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
